@@ -35,7 +35,6 @@ a {
 }
 
 .link {
-    outline: none;
     text-decoration: none;
 }
 
@@ -163,7 +162,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
-    max-height: 600px;
     background-color: var(--background-color-hero);
     text-align: center;
 
@@ -212,7 +210,7 @@ a {
 .button-hero:focus {
     color: var(--color-accent-two);
     background-color: var(--button-active);
-    outline: none;
+
 }
 
 /* !<!-- друга секція --> */
@@ -379,7 +377,8 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    fill: var(--color-icon-social)
+    fill: var(--color-icon-social);
+    outline: none;
 }
 
 
@@ -410,6 +409,7 @@ a {
     height: 92px;
     border: 1px solid var(--color-icon-social);
     border-radius: 4px;
+    outline: none;
 }
 
 .clients-icon {
@@ -459,7 +459,7 @@ a {
     color: var(--color-accent-two);
     background-color: var(--color-accent);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    outline: none;
+
 }
 
 /* !катки  портфоліо   */
@@ -510,12 +510,10 @@ a {
     letter-spacing: 0.03em;
 }
 
-.link-portfolio {
-    outline: none;
-}
-
-.link-portfolio:hover {
+.link-portfolio:hover,
+.link-portfolio:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
 }
 
 /* !фотер */
@@ -621,7 +619,8 @@ a {
     height: 40px;
     border-radius: 50%;
     background-color: var(--color-icon-footer);
-    fill: var(--color-accent-two)
+    fill: var(--color-accent-two);
+    outline: none;
 }
 
 .footer-link:hover,
