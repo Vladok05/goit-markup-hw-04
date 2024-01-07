@@ -272,7 +272,7 @@ button {
   letter-spacing: 0.04em;
   border-radius: 4px;
   background-color: #4d5ae5;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -396,6 +396,7 @@ button {
   transform: translateY(100%);
   background-color: #4d5ae5;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -407,17 +408,19 @@ button {
   transform: translateY(0);
 }
 
-.portfolio-item {
+.portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-.overlay-text {
+.portfolio-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* .overlay-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-}
+} */
 
 /* !footer */
 
@@ -465,7 +468,7 @@ button {
 }
 
 .footer-socials-link {
-  background-color: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-footer-caption {
